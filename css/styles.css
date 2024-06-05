@@ -15,7 +15,7 @@ hr{
 
 body{
     margin: 0px;
-    background-image: url(./assets/whitetexture.jpg);
+    background-image: url(27-may-24-TheYellowPoPCorn/assets/whitetexture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -118,21 +118,21 @@ nav>section {
 }
 
 .satu{
-    background-image: url(./assets/hill.png);
+    background-image: url(27-may-24-TheYellowPoPCorn/assets/hill.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
 }
 
 .dua{
-    background-image: url(./assets/farm.png);
+    background-image: url(27-may-24-TheYellowPoPCorn/assets/farm.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
 }
 
 .tiga{
-    background-image: url(./assets/train.png);
+    background-image: url(27-may-24-TheYellowPoPCorn/assets/train.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
