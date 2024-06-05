@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raka Pratama</title>
     <link rel="stylesheet" href="css/styles.css">
-</head>
+</head>     
 
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="logo-icon"></div>
 
-        <section>
+        <section class="navbar">
             <a class="nav-item" href="#home">Home</a>
             <a class="nav-item" href="#facilities">Our Facilities</a>
             <a class="nav-item" href="#message-us">Message us</a>
@@ -22,15 +22,28 @@
     <hr>
     <section class="section-container">
         <!-- Home -->
-        <section id="home">
+        <section id="home"> 
             <header>
-                <h1>Hi Raka, welcome to website! </h1>   
+                <h1 class="welcome">Hi <span id="name"></span>, welcome to Hatsuboshi High School's official website!</h1>   
             </header>
-
+            
             <article>
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p class="below-header">Let's take a look at Hatsuboshi High School's advantages!</p>
 
-                <div class="banner-container"></div>
+                <div class="img-container" style="display: flex;">
+                    <button class="img-button" onclick="plusDivs(-1)">&#10094</button>
+                    <img
+                    class="img-slideshow"
+                    src="assets/school.png" style="width: 70%;">
+                    <img
+                    class="img-slideshow"
+                    src="assets/school farm.png" style="width: 70%;">
+                    <img
+                    class="img-slideshow"
+                    src="assets/school class.png" style="width: 70%;">
+                    <button class="img-button" onclick="plusDivs(1)">&#10095</button>
+                </div> 
+                
             </article>
         </section>
 
@@ -44,18 +57,18 @@
 
             <article class="facility-lists">
                 <div>
-                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%"></div>
-                    <h5>Tes 1</h5>
+                    <div class="satu" style="width: 200px; height: 200px; border-radius: 50%"></div>
+                    <h5>Multipurpose Field</h5>
                 </div>
 
                 <div>
-                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%"></div>
-                    <h5>Tes 2</h5>
+                    <div class="dua" style="width: 200px; height: 200px; border-radius: 50%"></div>
+                    <h5>Healthy Farm</h5>
                 </div>
 
                 <div>
-                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
-                    <h5>Tes 3</h5>
+                    <div class="tiga" style="width: 200px; height: 200px; border-radius: 50%;"></div>
+                    <h5>Easy Access Transport</h5>
                 </div>
                 
             </article>
@@ -71,23 +84,44 @@
 
             <section class="message-us-section">
                 <!-- Form -->
-                <section>
+                <section class="form-section">
                     <form>
                         <label>Name: </label>
-                        <input />
+                        <input required type="text" placeholder="Type your name..." id="nama-input" style="width: 200px;">
+                        <br>
+
+                        <label>Date of Birth: </label>
+                        <input required type="date" id="tanggal-input" style="width: 203px;">
+                        <br>
+
+                        <label>Gender: </label>
+                        <input required type="radio" name="option" id="male" value="kelamin-input">Male
+                        <input required type="radio" name="option" id="female" value="kelamin-input">Female
+                        <br>
+
+                        <label>Message: </label>
+                        <input required type="text" placeholder="Type message here..." id="message" style="width: 200px">  
+                        <br>
+
+                        <button type="button" id="submit" style="width: 320px;" onclick="">Submit</button>
                     </form>
                 </section>
-
                 <!-- Result -->
                 <section class="result-container">
                     <div class="form-result">
-
                     </div>
                 </section>
+        </section>
+        
     </section>
-    <footer>
-
-    </footer>
+    <script src="js/script.js" defer></script>
 </body>
 
+<hr>
+
+<footer>
+    <section class="footer">
+        <p class="watermark">Created by Raka Pratama</p>
+    </section>
+</footer>
 </html>
