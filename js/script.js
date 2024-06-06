@@ -28,4 +28,9 @@ function showDivs(n) {
 
 setInterval(() =>{
     plusDivs(1);
-}, 2000);   
+}, 2000);  
+
+// Form Result
+function validateForm(){
+    const name = document.forms["message-form"]["nama-input"]
+}

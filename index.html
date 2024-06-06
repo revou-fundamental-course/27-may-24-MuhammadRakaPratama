@@ -57,20 +57,19 @@
 
             <article class="facility-lists">
                 <div>
-                    <div class="satu" style="width: 200px; height: 200px; border-radius: 50%"></div>
+                    <img class="satu" style="width: 200px; height: 200px; border-radius: 50%; background-image: url(assets/hill.png);"></img>
                     <h5>Multipurpose Field</h5>
                 </div>
 
                 <div>
-                    <div class="dua" style="width: 200px; height: 200px; border-radius: 50%"></div>
+                    <img class="dua" style="width: 200px; height: 200px; border-radius: 50%; background-image: url(assets/farm.png);"></img>
                     <h5>Healthy Farm</h5>
                 </div>
 
                 <div>
-                    <div class="tiga" style="width: 200px; height: 200px; border-radius: 50%;"></div>
+                    <img class="tiga" style="width: 200px; height: 200px; border-radius: 50%; background-image: url(assets/train.png);"></img>
                     <h5>Easy Access Transport</h5>
                 </div>
-                
             </article>
         </section>
 
@@ -85,25 +84,25 @@
             <section class="message-us-section">
                 <!-- Form -->
                 <section class="form-section">
-                    <form>
+                    <form name="message-form" onsubmit="return validateForm()">
                         <label>Name: </label>
-                        <input required type="text" placeholder="Type your name..." id="nama-input" style="width: 200px;">
+                        <input required type="text" placeholder="Type your name..." name="nama-input" style="width: 200px;">
                         <br>
 
                         <label>Date of Birth: </label>
-                        <input required type="date" id="tanggal-input" style="width: 203px;">
+                        <input required type="date" name="tanggal-input" style="width: 203px;">
                         <br>
 
                         <label>Gender: </label>
-                        <input required type="radio" name="option" id="male" value="kelamin-input">Male
-                        <input required type="radio" name="option" id="female" value="kelamin-input">Female
+                        <input required type="radio" name="kelamin" id="male" value="kelamin-input">Male
+                        <input required type="radio" name="kelamin" id="female" value="kelamin-input">Female
                         <br>
 
                         <label>Message: </label>
-                        <input required type="text" placeholder="Type message here..." id="message" style="width: 200px">  
+                        <textarea required placeholder="Type your message..." name="message" style="width: 210px;"></textarea>
                         <br>
 
-                        <button type="button" id="submit" style="width: 320px;" onclick="">Submit</button>
+                        <input type="submit" value="Submit" style="width: 320px; margin: 0px; margin-top: 8px;"/>
                     </form>
                 </section>
                 <!-- Result -->
