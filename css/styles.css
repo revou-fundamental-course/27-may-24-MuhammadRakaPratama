@@ -137,12 +137,17 @@ nav>section {
 }
 
 .form-result{
-    height: 200px;
+    height: 300px;
     width: 500px;
     border: 1px solid black;
     background-color: white;
     margin-right: 100px;
     margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.form-result>p{
+    margin-left: 10px;
 }
 
 label{
@@ -253,9 +258,9 @@ input{
 
     .form-result{
         width: auto;
-        height: 200px;
+        height: 300px;
         margin-bottom: 30px;
         justify-items: center;
-        margin-right: auto;
+        margin-right: auto; 
     }
   }

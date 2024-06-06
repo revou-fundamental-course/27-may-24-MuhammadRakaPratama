@@ -30,7 +30,26 @@ setInterval(() =>{
     plusDivs(1);
 }, 2000);  
 
+// Current Time
+const now = new Date();
+const dateTimeString = now.toLocaleString();
+
 // Form Result
 function validateForm(){
-    const name = document.forms["message-form"]["nama-input"]
+    const name = document.forms["message-form"]["nama-input"].value;
+    const birthDate = document.forms["message-form"]["tanggal-input"].value;
+    const gender = document.forms["message-form"]["kelamin"].value;
+    const message = document.forms["message-form"]["message"].value;
+
+    setSenderUI(name, birthDate, gender, message);
+
+    return false;
+}
+
+function setSenderUI(name, birthDate, gender, message){
+    document.getElementById("waktu-sekarang").innerHTML = now;
+    document.getElementById("sender-nama-input").innerHTML = name;
+    document.getElementById("sender-tanggal-input").innerHTML = birthDate;
+    document.getElementById("sender-kelamin").innerHTML = gender;
+    document.getElementById("sender-message").innerHTML = message;
 }

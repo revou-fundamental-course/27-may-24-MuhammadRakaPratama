@@ -85,22 +85,23 @@
                 <!-- Form -->
                 <section class="form-section">
                     <form name="message-form" onsubmit="return validateForm()">
-                        <label>Name: </label>
-                        <input required type="text" placeholder="Type your name..." name="nama-input" style="width: 200px;">
-                        <br>
+                        Name: <input required type="text" placeholder="Type your name..." name="nama-input" style="width: 200px;">
+                        <br/>
 
-                        <label>Date of Birth: </label>
+                        Date of Birth:
                         <input required type="date" name="tanggal-input" style="width: 203px;">
-                        <br>
+                        <br/>
 
-                        <label>Gender: </label>
-                        <input required type="radio" name="kelamin" id="male" value="kelamin-input">Male
-                        <input required type="radio" name="kelamin" id="female" value="kelamin-input">Female
-                        <br>
+                        Gender:
+                        <input required type="radio" name="kelamin" id="male" value="Male"/>
+                        <label for="male">Male</label>
+                        <input required type="radio" name="kelamin" id="female" value="Female"/>
+                        <label for="female">Female</label>
+                        <br/>
 
-                        <label>Message: </label>
+                        Message: 
                         <textarea required placeholder="Type your message..." name="message" style="width: 210px;"></textarea>
-                        <br>
+                        <br/>
 
                         <input type="submit" value="Submit" style="width: 320px; margin: 0px; margin-top: 8px;"/>
                     </form>
@@ -108,6 +109,11 @@
                 <!-- Result -->
                 <section class="result-container">
                     <div class="form-result">
+                        <p>Current Time: <span id="waktu-sekarang"></span></p>
+                        <p>Name: <span id="sender-nama-input"></span></p>
+                        <p>Date of Birth: <span id="sender-tanggal-input"></span></p>
+                        <p>Gender: <span id="sender-kelamin"></span></p>
+                        <p>Message: <span id="sender-message"></span></p>
                     </div>
                 </section>
         </section>
